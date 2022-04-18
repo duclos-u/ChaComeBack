@@ -1,0 +1,76 @@
+$desktop-breakpoint: 1200px
+
+.hero-section
+  display: flex
+  flex-direction: column
+  background: #012169
+  padding: 0 20px
+  color: white
+  font-family: 'montSerrat', sans-serif
+  align-items: center
+  @media(min-width: $desktop-breakpoint)
+    padding: 0 0 0 96px
+
+.header
+  margin-top: 30px
+  margin-bottom: 84px
+  font-weight: 300
+  font-size: 12px
+
+.hero-main-content-wrapper
+  display: flex
+  flex-direction: column
+  @media(min-width: $desktop-breakpoint)
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    max-width: 1512px
+
+.hero-text-div
+  text-align: start
+  max-width: 335px
+  width: 100%
+  @media(min-width: $desktop-breakpoint)
+    max-width: initial
+    //margin-top: 176px
+
+  .hero-hello
+    font-weight: 700
+    font-size: 30px
+    @media(min-width: $desktop-breakpoint)
+      font-size: 50px
+
+  .hero-name
+    font-weight: 900
+    font-size: 58px
+    @media(min-width: $desktop-breakpoint)
+      font-size: 148px
+
+    &-last
+      position: relative
+      top: -14px
+      margin-bottom: 8px
+
+.hero-job
+  font-size: 12px
+  font-weight: 600
+  display: flex
+
+.hero-panopli-logo
+  margin-left: 6px
+  position: relative
+  top: -2px
+
+.hero-illustration
+  position: relative
+  bottom: -23px
+  max-width: 330px
+  width: 100%
+  @media(min-width: $desktop-breakpoint)
+    width: 45%
+    height: 100%
+    bottom: -43px
+    max-width: 672px
+    transform: translate(-30%)
+    margin-top: -160px
+

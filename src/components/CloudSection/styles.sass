@@ -1,0 +1,59 @@
+@import 'src/styles.sass'
+
+.cloud-section
+  background-color: rgba(1, 33, 105, 0.1)
+  padding: 78px 20px 105px
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media(min-width: $desktop-breakpoint)
+    padding: 200px 96px
+
+  .cloud
+    width: 124px
+    @media(min-width: $desktop-breakpoint)
+      width: 215px
+  .first-cloud-wrapper
+    position: relative
+    width: 0
+    height: 0
+    top: -100px
+    left: 40px
+    @media(min-width: $desktop-breakpoint)
+      top: -250px
+      left: -300px
+  .third-cloud-wrapper
+    position: relative
+    width: 0
+    height: 0
+    bottom: -50px
+    left: -120px
+    @media(min-width: $desktop-breakpoint)
+      left: 330px
+
+
+  .cloud-text-div
+    display: flex
+    flex-direction: column
+    max-width: 720px
+    @media(min-width: $desktop-breakpoint)
+      flex-direction: row
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      max-width: 1512px
+
+    h2
+      max-width: 380px
+      margin-bottom: 48px
+      text-align: left
+    .simple-text
+      font-weight: 500
+      font-size: 14px
+      line-height: 25px
+      text-align: right
+      color: #012169
+      @media(min-width: $desktop-breakpoint)
+        max-width: 720px
+        font-size: 25px
+        line-height: 38px

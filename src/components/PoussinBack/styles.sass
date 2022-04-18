@@ -1,0 +1,61 @@
+@import 'src/styles.sass'
+
+.poussin-back-section
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 100px 20px
+  @media(min-width: $desktop-breakpoint)
+    padding: 200px 96px 300px
+  &>*
+    display: flex
+    flex-direction: column
+    max-width: 720px
+    width: 100%
+    @media(min-width: $desktop-breakpoint)
+      max-width: 1512px
+  .poussin-back-div
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media(min-width: $desktop-breakpoint)
+      width: 100%
+      flex-direction: row-reverse
+      justify-content: space-between
+      margin-bottom: 265px
+    .poussin-back-div-text
+      margin-bottom: 108px
+      @media(min-width: $desktop-breakpoint)
+        max-width: 720px
+      h2
+        text-align: left
+        margin: 0 0 8px
+      .simple-text
+        text-align: left
+        font-size: 14px
+        font-weight: 500
+        color: #012169
+        line-height: 25px
+        @media(min-width: $desktop-breakpoint)
+          line-height: 38px
+          font-size: 22px
+    .poussin-back-div-img
+      margin-bottom: 48px
+      img
+        max-width: 266px
+        width: 100%
+        @media(min-width: $desktop-breakpoint)
+          max-width: 508px
+
+  .poussin-alone-text
+    text-align: right
+    font-weight: 500
+    font-size: 14px
+    line-height: 25px
+    color: #012169
+    @media(min-width: $desktop-breakpoint)
+      font-size: 25px
+      line-height: 38px
+      max-width: 753px
+      align-self: flex-end
+

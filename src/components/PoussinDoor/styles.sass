@@ -1,0 +1,57 @@
+@import 'src/styles.sass'
+
+.door-section
+  color: white
+  background-color: #012169
+  padding: 56px 20px 120px
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media(min-width: $desktop-breakpoint)
+    padding: 112px 96px 96px
+  .door-section-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 720px
+    @media(min-width: $desktop-breakpoint)
+      max-width: 1512px
+      width: 100%
+    h2
+      color: white
+      margin-bottom: 40px
+      @media(min-width: $desktop-breakpoint)
+        margin-bottom: 82px
+
+    .door-section-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      @media(min-width: $desktop-breakpoint)
+        width: 100%
+        justify-content: space-between
+        flex-direction: row-reverse
+      .door-section-illu
+        margin-bottom: 48px
+        img
+          width: 100%
+          max-width: 240px
+          @media(min-width: $desktop-breakpoint)
+            max-width: 489px
+      .door-text-wrapper
+        @media(min-width: $desktop-breakpoint)
+          max-width: 720px
+        .simple-text
+          text-align: left
+          font-weight: 500
+          font-size: 14px
+          line-height: 25px
+          @media(min-width: $desktop-breakpoint)
+            line-height: 38px
+            font-size: 22px
+          &:first-child
+            margin-bottom: 48px
+            @media(min-width: $desktop-breakpoint)
+              margin-bottom: 100px
+
+

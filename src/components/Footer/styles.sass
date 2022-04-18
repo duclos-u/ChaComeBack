@@ -1,0 +1,25 @@
+@import 'src/styles.sass'
+
+.footer-section
+  background-color: #012169
+  padding: 30px
+  display: flex
+  align-items: center
+  color: white
+  font-weight: 300
+  line-height: 16px
+  flex-direction: column
+  .container-section
+    display: flex
+    flex-direction: column
+    align-items: center
+    @media(min-width: $desktop-breakpoint)
+      flex-direction: row
+      width: 100%
+      justify-content: space-between
+      .hoho
+        text-align: right
+    &>div:first-child
+      margin-bottom: 16px
+      @media(min-width: $desktop-breakpoint)
+        margin-bottom: 0

@@ -1,0 +1,63 @@
+@import 'src/styles.sass'
+
+.container
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  align-items: center
+  @media(min-width: $desktop-breakpoint)
+    flex-direction: row
+    width: 100%
+    max-width: 1512px
+
+.container.container-reverse
+  @media(min-width: $desktop-breakpoint)
+    flex-direction: row-reverse
+
+.kecece-section
+  padding: 124px 20px 100px 20px
+  display: flex
+  justify-content: center
+  @media(min-width: $desktop-breakpoint)
+    padding: 200px 96px
+  .kecece-img
+    img
+      max-width: 260px
+      @media(min-width: $desktop-breakpoint)
+        max-width: 510px
+      width: 100%
+  .kecece-text-div
+    display: flex
+    flex-direction: column
+    align-items: start
+    max-width: 720px
+    font-family: "Montserrat", sans-serif
+    h2
+      color: #012169
+      font-weight: 700
+      text-align: left
+      font-size: 25px
+      @media(min-width: $desktop-breakpoint)
+        font-size: 45px
+        margin-bottom: 16px
+
+    .kecece-text-div-main-text
+      font-weight: 500
+      text-align: left
+      color: #012169
+      margin-bottom: 16px
+      font-size: 14px
+      line-height: 25px
+      @media(min-width: $desktop-breakpoint)
+        font-size: 22px
+        line-height: 38px
+      span
+        font-weight: 600
+
+    .kecece-rapport
+      font-size: 14px
+      font-weight: 600
+      line-height: 38px
+      color: #0000FF
+      @media(min-width: $desktop-breakpoint)
+        font-size: 23px
